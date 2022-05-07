@@ -13,11 +13,11 @@ const SingleInventory = ({ items }) => {
                 <h3 className='text-2xl font-semibold '>{name}</h3>
                 <p className='text-[17px] py-3'>{description}</p>
                 <div className='flex justify-between items-center font-semibold'>
-                    <p><FontAwesomeIcon className='text-orange-500 text-lg' icon={faClipboardCheck} /> {quantity}<span className='text-sm font-bold'> /ton</span></p>
-                    <p><FontAwesomeIcon className='text-orange-500 text-lg' icon={faCircleUser}></FontAwesomeIcon> {supplierName}</p>
-                    <p><FontAwesomeIcon className='text-orange-500 text-lg' icon={faDollar}></FontAwesomeIcon> {price}<span className='text-sm font-bold'> /ton</span></p>
+                    <p><FontAwesomeIcon className='text-orange-600 text-lg' icon={faClipboardCheck} /> {quantity}<span className='text-sm font-bold'> /ton</span></p>
+                    <p><FontAwesomeIcon className='text-orange-600 text-lg' icon={faCircleUser}></FontAwesomeIcon> {supplierName}</p>
+                    <p><FontAwesomeIcon className='text-orange-600 text-lg' icon={faDollar}></FontAwesomeIcon> {price}<span className='text-sm font-bold'> /ton</span></p>
                 </div>
-                <button className='bg-indigo-500 text-white mt-10 py-3 px-6 rounded-full mx-auto block'><Link to='inventory'>Manage Stock</Link></button>
+                <button className='hover:bg-indigo-500 bg-orange-500 text-white mt-10 py-3 px-6 rounded-full mx-auto block'><Link to='inventory'>Manage Stock</Link></button>
             </div>
         </div>
     );
