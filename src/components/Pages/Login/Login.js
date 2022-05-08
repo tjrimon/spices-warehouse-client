@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from './Loading';
+import axios from 'axios';
 
 
 
@@ -38,12 +39,13 @@ const Login = () => {
         errorMessage = <p className='text-danger'>Error: {error?.message}</p>
     }
 
-    const handleSubmit = event => {
+    const handleSubmit = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
+        const { data } = await axios.post('https://calm-anchorage-79601.herokuapp.com/login', { email })
     }
 
     const resetPassword = async () => {
