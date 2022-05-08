@@ -8,7 +8,7 @@ const useInventoryItems = () => {
     const [loading, setLoading] = useState(false);
     const loadData = async () => {
         try {
-            const data = await axios.get('inventory.json')
+            const data = await axios.get('https://calm-anchorage-79601.herokuapp.com/inventory')
                 .then(data => setInventoryItems(data.data))
             setLoading(true)
         } catch (error) {
@@ -26,7 +26,7 @@ const useInventoryItems = () => {
         setInventoryItems,
         loading
     }
-    
+
 };
 
 export default useInventoryItems;

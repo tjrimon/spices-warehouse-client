@@ -9,6 +9,7 @@ import Footer from './components/CommonSection/Footer';
 import Registration from './components/Pages/Login/Registration';
 import RequireAuth from './components/Pages/Login/RequireAuth';
 import Blogs from './components/Pages/Blogs';
+import AddInventory from './components/CommonSection/Inventory/AddInventory';
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/inventory' element={<AllInventory></AllInventory>}></Route>
+        <Route path="/addinventory" element={
+          <RequireAuth>
+            <AddInventory></AddInventory>
+          </RequireAuth>
+        }></Route>
         <Route path='/inventory/:spicesID' element={
           <RequireAuth><EditInventory></EditInventory></RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
