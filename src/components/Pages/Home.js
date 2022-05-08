@@ -4,8 +4,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import InventoryItemsSection from '../CommonSection/Inventory/InventoryItemsSection';
 import Footer from '../CommonSection/Footer';
+import useInventoryItems from '../../hooks/useInventoryItems';
+import SingleInventory from '../CommonSection/Inventory/SingleInventory';
+import Loading from './Login/Loading';
 
 const Home = () => {
+    const {inventoryItems,loading}=useInventoryItems()
     return (
         <div>
             <div className='bg-[url("https://i.ibb.co/Sdj1pMB/bannerbg.jpg")] bg-cover bg-center bg-no-repeat text-white'>
@@ -19,7 +23,11 @@ const Home = () => {
 
             <div className='container mx-auto my-20'>
                 <h1 className='text-center text-3xl md:text-4xl uppercase font-semibold'>top Spices</h1>
-                <InventoryItemsSection></InventoryItemsSection>
+                <div>
+            <div className='container grid md:grid-cols-2 lg:grid-cols-3 px-8 md:mx-0 gap-10 my-20'>
+                {loading ? inventoryItems.slice(0,6).map(item => <SingleInventory key={item.id} items={item}></SingleInventory>) : <Loading></Loading>}
+            </div>
+        </div>
                 <button className='hover:bg-indigo-500 bg-orange-500 text-white mt-10 py-3 px-6 rounded-full mx-auto block'><Link to='inventory'>Visit All Stock</Link></button>
             </div>
 

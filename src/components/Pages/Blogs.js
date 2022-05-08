@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='container mx-auto grid lg:grid-cols-2 xl:grid-cols-3 px-8  mx-auto gap-10 my-20'>
+        <div className='container mx-auto grid lg:grid-cols-2 xl:grid-cols-3 px-8  gap-10 my-20'>
 
             <div className='shadow-xl pb-10 lg:w-[400px] w-[450px]'>
                 <img src="https://i.ibb.co/stLmSLT/js-vs-node.jpg" alt="" />
