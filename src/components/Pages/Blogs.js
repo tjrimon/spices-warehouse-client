@@ -4,7 +4,7 @@ const Blogs = () => {
     return (
         <div className='container mx-auto grid lg:grid-cols-2 xl:grid-cols-3 px-8  gap-10 my-20'>
 
-            <div className='shadow-xl pb-10 lg:w-[400px] w-[450px]'>
+            <div className='shadow-xl pb-10 lg:w-[400px] md:w-[450px]'>
                 <img src="https://i.ibb.co/stLmSLT/js-vs-node.jpg" alt="" />
                 <div className="content p-5 text-center">
                     <h3 className='text-xl font-semibold '>Ques: Difference between javascript and nodejs</h3>
@@ -12,7 +12,7 @@ const Blogs = () => {
                 </div>
             </div>
 
-            <div className='shadow-xl pb-10 lg:w-[400px] w-[450px]'>
+            <div className='shadow-xl pb-10 lg:w-[400px] md:w-[450px]'>
                 <img src=" https://i.ibb.co/dcKCD9B/node-vs-mongo.jpg" alt="" />
                 <div className="content p-5 text-center">
                     <h3 className='text-xl font-semibold '>Ques: When should you use nodejs and when should you use mongodb</h3>
@@ -20,7 +20,7 @@ const Blogs = () => {
                 </div>
             </div>
 
-            <div className='shadow-xl pb-10 lg:w-[400px] w-[450px]'>
+            <div className='shadow-xl pb-10 lg:w-[400px] md:w-[450px]'>
                 <img src="https://i.ibb.co/fHjrP4Z/sql-vs-nosql.jpg" alt="" />
                 <div className="content p-5 text-center">
                     <h3 className='text-xl font-semibold '>Ques: Differences between sql and nosql databases.</h3>

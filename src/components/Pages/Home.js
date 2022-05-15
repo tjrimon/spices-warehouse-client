@@ -58,7 +58,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='py-20'>
+            <div className='pt-0 md:pt-20 pb-20'>
                 <div className='container mx-auto'>
 
                     <div className='grid md:grid-cols-2 items-center'>

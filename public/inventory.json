@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Onion",
+        "email": "tjrimon@gmail.com",
         "quantity": 25,
         "price": 1000,
         "supplierName": "TJ Rimon",
@@ -11,6 +12,7 @@
     {
         "id": 2,
         "name": "Chili",
+        "email": "tjrimon@gmail.com",
         "quantity": 15,
         "price": 2000,
         "supplierName": "TJ Rimon",
@@ -20,6 +22,7 @@
     {
         "id": 3,
         "name": "Cardamom",
+        "email": "tjrimon@gmail.com",
         "quantity": 20,
         "price": 3000,
         "supplierName": "TJ Rimon",
@@ -29,6 +32,7 @@
     {
         "id": 4,
         "name": "Garlic",
+        "email": "tjrimon@gmail.com",
         "quantity": 50,
         "price": 1200,
         "supplierName": "TJ Rimon",
@@ -38,6 +42,7 @@
     {
         "id": 5,
         "name": "Pepper",
+        "email": "tjrimon@gmail.com",
         "quantity": 10,
         "price": 1800,
         "supplierName": "TJ Rimon",
@@ -47,6 +52,7 @@
     {
         "id": 6,
         "name": "Saffron",
+        "email": "tjrimon@gmail.com",
         "quantity": 0.5,
         "price": 10000,
         "supplierName": "TJ Rimon",

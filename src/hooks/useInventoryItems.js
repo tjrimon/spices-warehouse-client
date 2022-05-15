@@ -5,6 +5,7 @@ import axios from "axios";
 
 const useInventoryItems = () => {
     const [inventoryItems, setInventoryItems] = useState([]);
+    const [isReload, setIsReload] = useState(false);
     const [loading, setLoading] = useState(false);
     const loadData = async () => {
         try {
@@ -24,7 +25,9 @@ const useInventoryItems = () => {
     return {
         inventoryItems,
         setInventoryItems,
-        loading
+        loading,
+        setIsReload,
+        isReload
     }
 
 };
